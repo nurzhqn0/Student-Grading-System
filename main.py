@@ -50,6 +50,9 @@ while True:
     # Asking for continuity, and checking value
     is_continuing = str(input("Do you want to enter another student's details? (yes/no): "))
 
+    while(is_continuing != 'yes' and is_continuing != 'no'):
+        is_continuing = str(input("Please enter correct details! (yes/no): "))
+
     if is_continuing == 'yes':
         print()
 
